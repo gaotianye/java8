@@ -33,6 +33,10 @@ public class LambdaTest {
 		
 		final String s = "\\";
 		Arrays.asList("a","b","c").forEach(e -> System.out.println(e+s));*/
+		//编译失败，因为lambda内部不能使用非final类型的变量
+		/*for(int i=0;i<5;i++){
+			Arrays.asList("a","b","c").forEach(e -> System.out.println(e+i));
+		}*/
 		/**
 		 * (5)Lambda可能会返回一个值。返回值的类型也是由编译器推测出来的。
 		 * 如果lambda的函数体只有一行的话，那么没有必要显式使用return语句。
