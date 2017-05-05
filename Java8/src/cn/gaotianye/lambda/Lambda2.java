@@ -56,7 +56,7 @@ public class Lambda2 {
 		List<String> lowerCaseName4 = names.stream().map(name -> name.toUpperCase())
 				.collect(Collectors.toList());
 		/**
-		 * (5)使用Method Reference
+		 * (5)使用Method Reference 方法引用，参考Lambda3.java
 		 */
 		List<String> lowerCaseName5 = names.stream().map(String::toLowerCase).collect(Collectors.toList());
 	}
