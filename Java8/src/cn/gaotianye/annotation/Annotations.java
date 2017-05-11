@@ -13,6 +13,11 @@ import java.util.Collection;
  */
 public class Annotations {
     @Retention( RetentionPolicy.RUNTIME )
+    /*
+     * ElementType.TYPE_USE和ElementType.TYPE_PARAMETER
+     * 是两个新添加的用于描述适当的注解上下文的元素类型。
+     * 在Java语言中，注解处理API也有小的改动来识别新增的类型注解。
+     */
     @Target( { ElementType.TYPE_USE, ElementType.TYPE_PARAMETER } )
     public @interface NonEmpty {        
     }
