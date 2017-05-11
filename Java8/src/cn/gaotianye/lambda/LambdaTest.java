@@ -1,8 +1,5 @@
 package cn.gaotianye.lambda;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class LambdaTest {
 	public static void main(String[] args) {
 		//1、Java7
